@@ -45,6 +45,8 @@ error_reporting(-1);
             }else{
                 $content = explode("\n", $tr);
                 echo $tr;
+                $content[1] = $string = preg_replace('/\s/', '', $content[1]);
+                $content[3] = $string = preg_replace('/\s/', '', $content[3]);
                 echo "  url :'".$content[1]."'  ";
                 echo "  state :'".$content[0]."'  ";
                 echo "  registration :'".$content[3]."'  ";
