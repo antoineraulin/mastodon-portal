@@ -24,9 +24,6 @@
 
 </head>
 <?php
-    ini_set('display_startup_errors', 1);
-ini_set('display_errors', 1);
-error_reporting(-1);
     $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
     $dochtml = new DOMDocument();
     $dochtml->loadHTMLFile("http://instances.mastodon.xyz/");
@@ -44,13 +41,8 @@ error_reporting(-1);
                 $time = false;
             }else{
                 $content = explode("\n", $tr);
-                echo $tr;
                 $content[1] = $string = preg_replace('/\s/', '', $content[1]);
                 $content[3] = $string = preg_replace('/\s/', '', $content[3]);
-                echo "  url :'".$content[1]."'  ";
-                echo "  state :'".$content[0]."'  ";
-                echo "  registration :'".$content[3]."'  ";
-                echo "<br>";
                 if($content[0] == "UP" && $content[3] == "Yes"){
                     array_push($instancelist, $content[1]);
                 }
@@ -65,7 +57,8 @@ error_reporting(-1);
         
         
     }
-    print_r($instancelist);
+    $k = array_rand($instancelist);
+    $instancechoosed = $instancelist[$k];
     ?>
 <body class='about-body' onload="begin()">
 <div class='wrapper'>
@@ -94,11 +87,14 @@ Mastodon Portal
 <div class='mascot'><img src="fluffy%20elephant%20friend.png" alt="Fluffy elephant friend" /></div>
 <div novalidate="novalidate" class="simple_form new_user">
     <div class="input string required user_account_username">
-        <input aria-label="Instance" class="string required" placeholder="Instance" type="text" value="" name="instance" id="user_account_attributes_instance" />
+        <?php
+        echo '<input aria-label="Instance" class="string required" placeholder="Instance" type="text" value="'.$instancechoosed.'" name="instance" id="user_account_attributes_instance" />';
+        
+        ?>
     </div>
 <div class='actions'>
-<button name="button" onclick="getStarted()" class="btn" id="getstarted">
-<?php 
+<?php
+    echo '<form action="'.$instancechoosed.'"><button class="btn">';
     switch ($lang){
     case "fr":
         echo "Commencer";
@@ -113,8 +109,9 @@ Mastodon Portal
         echo "Get Started";
         break;
 }
-?>
-</button>
+    echo '</button></form>';
+    ?>
+
 </div>
 <div class='info'>
 <a class="webapp-btn" href="/auth/sign_in">Log in</a>
