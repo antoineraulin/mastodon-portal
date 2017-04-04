@@ -35,7 +35,7 @@ error_reporting(-1);
     while($time == true){
         
         try{
-            $tr = $dochtml->getElementsTagName('tr')[$time2]->nodeValue;
+            $tr = $dochtml->getElementsByTagName('tr')[$time2]->nodeValue;
             echo $tr;
         }catch (Exception $e) {
             $time = false;
