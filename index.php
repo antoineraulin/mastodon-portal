@@ -42,7 +42,8 @@ error_reporting(-1);
                 break;
                 $time = false;
             }else{
-                echo $tr;
+                $content = $dochtml->saveHTML($tr);
+                echo $content + "<br>";
             }
         }catch (Exception $e) {
             break;
