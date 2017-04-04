@@ -59,7 +59,7 @@ error_reporting(-1);
         
         
     }
-    echo $instancelist;
+    print_r($instancelist);
     ?>
 <body class='about-body' onload="begin()">
 <div class='wrapper'>
