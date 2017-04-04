@@ -29,7 +29,7 @@ ini_set('display_errors', 1);
 error_reporting(-1);
     $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
     $dochtml = new DOMDocument();
-    $dochtml->loadHTMLFile("https://instances.mastodon.xyz/");
+    $dochtml->loadHTMLFile("http://instances.mastodon.xyz/");
     $time = true;
     $time2 = 0;
     while($time == true){
@@ -38,11 +38,15 @@ error_reporting(-1);
             $tr = $dochtml->getElementsByTagName('tr')[$time2]->nodeValue;
             if(strpos($tr, 'Uptime') !== false){
                 
+            }else if($tr == null){
+                break;
+                $time = false;
             }else{
                 
             }
         }catch (Exception $e) {
             break;
+            $time = false;
             echo "ERREUR : "+$e;
         }
         
