@@ -36,10 +36,14 @@ error_reporting(-1);
         
         try{
             $tr = $dochtml->getElementsByTagName('tr')[$time2]->nodeValue;
-            echo $tr;
+            if($tr.contains('Registrations')){
+                
+            }else{
+                
+            }
         }catch (Exception $e) {
             $time = false;
-            echo $e;
+            echo "ERREUR : "+$e;
         }
         
         $time2++;
