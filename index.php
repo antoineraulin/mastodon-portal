@@ -36,16 +36,14 @@ error_reporting(-1);
     while($time == true){
         
         try{
-            $tr = $dochtml->getElementsByTagName('tr')[$time2];
-            $tr2 = $tr->ownerDocument->saveHTML($tr);
-            if(strpos($tr2, 'Uptime') !== false){
+            $tr = $dochtml->getElementsByTagName('tr')[$time2]->nodeValue;
+            if(strpos($tr, 'Uptime') !== false){
                 
-            }else if($tr2 == null){
+            }else if($tr == null){
                 break;
                 $time = false;
             }else{
-                $content = explode(" ", $tr2);
-                echo $tr2;
+                $content = explode("    ", $tr);
                 echo "  url :'".$content[1]."'  ";
                 echo "  state :'".$content[0]."'  ";
                 echo "  registration :'".$content[3]."'  ";
