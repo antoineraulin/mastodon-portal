@@ -32,6 +32,7 @@ error_reporting(-1);
     $dochtml->loadHTMLFile("http://instances.mastodon.xyz/");
     $time = true;
     $time2 = 0;
+    $instancelist = [];
     while($time == true){
         
         try{
@@ -44,6 +45,9 @@ error_reporting(-1);
             }else{
                 echo $tr;
                 $content = explode(" ", $tr);
+                if($content[0] == "UP" && $content[3] == "Yes"){
+                    array_push($instancelist, $content[1]);
+                }
             }
         }catch (Exception $e) {
             break;
@@ -55,6 +59,7 @@ error_reporting(-1);
         
         
     }
+    echo $instancelist;
     ?>
 <body class='about-body' onload="begin()">
 <div class='wrapper'>
