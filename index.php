@@ -37,7 +37,7 @@ error_reporting(-1);
         
         try{
             $tr = $dochtml->getElementsByTagName('tr')[$time2];
-            $tr2 = $tr->ownerDocument->saveHTML($tr)
+            $tr2 = $tr->ownerDocument->saveHTML($tr);
             if(strpos($tr, 'Uptime') !== false){
                 
             }else if($tr == null){
