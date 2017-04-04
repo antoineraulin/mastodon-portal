@@ -42,7 +42,7 @@ error_reporting(-1);
                 
             }
         }catch (Exception $e) {
-            $time = false;
+            break;
             echo "ERREUR : "+$e;
         }
         
