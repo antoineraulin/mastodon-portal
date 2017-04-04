@@ -44,6 +44,7 @@ error_reporting(-1);
                 $time = false;
             }else{
                 $content = explode("    ", $tr);
+                echo $tr;
                 echo "  url :'".$content[1]."'  ";
                 echo "  state :'".$content[0]."'  ";
                 echo "  registration :'".$content[3]."'  ";
