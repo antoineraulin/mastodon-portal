@@ -43,7 +43,7 @@ error_reporting(-1);
                 break;
                 $time = false;
             }else{
-                $content = explode("    ", $tr);
+                $content = explode("\n", $tr);
                 echo $tr;
                 echo "  url :'".$content[1]."'  ";
                 echo "  state :'".$content[0]."'  ";
