@@ -25,7 +25,24 @@
 </head>
 <?php
     $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-    
+    $dochtml = new DOMDocument();
+    $dochtml->loadHTMLFile("https://instances.mastodon.xyz/");
+    $time = true;
+    $time2 = 0;
+    while($time == true){
+        
+        try{
+            $tr = $dochtml->getElementsTagName('tr')[$time2]->nodeValue;
+            echo $tr;
+        }catch (Exception $e) {
+            $time = false;
+            echo $e;
+        }
+        
+        $time2++;
+        
+        
+    }
     ?>
 <body class='about-body' onload="begin()">
 <div class='wrapper'>
