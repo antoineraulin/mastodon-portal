@@ -6,6 +6,7 @@
 <meta content='width=device-width, initial-scale=1' name='viewport'>
 <meta content='IE=edge' http-equiv='X-UA-Compatible'>
 <link href='/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+<link rel="icon" type="image/png" href="logo.png" />
 <link href='/manifest.json' rel='manifest'>
 <meta content='#282c37' name='theme-color'>
 <meta content='yes' name='apple-mobile-web-app-capable'>
