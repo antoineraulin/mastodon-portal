@@ -44,9 +44,9 @@ error_reporting(-1);
                 $time = false;
             }else{
                 $content = explode(" ", $tr);
-                echo "  url :'"+$content[1]+"'  ";
-                echo "  state :'"+$content[0]+"'  ";
-                echo "  registration :'"+$content[3]+"'  ";
+                echo "  url :'".$content[1]."'  ";
+                echo "  state :'".$content[0]."'  ";
+                echo "  registration :'".$content[3]."'  ";
                 echo "<br>";
                 if($content[0] == "UP" && $content[3] == "Yes"){
                     array_push($instancelist, $content[1]);
