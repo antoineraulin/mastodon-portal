@@ -42,7 +42,7 @@ error_reporting(-1);
                 break;
                 $time = false;
             }else{
-                echo $tr +"<br>";
+                echo $tr;
             }
         }catch (Exception $e) {
             break;
