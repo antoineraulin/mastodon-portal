@@ -24,6 +24,9 @@
 
 </head>
 <?php
+    ini_set('display_startup_errors', 1);
+ini_set('display_errors', 1);
+error_reporting(-1);
     $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
     $dochtml = new DOMDocument();
     $dochtml->loadHTMLFile("https://instances.mastodon.xyz/");
