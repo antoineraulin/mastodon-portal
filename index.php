@@ -36,7 +36,7 @@ error_reporting(-1);
         
         try{
             $tr = $dochtml->getElementsByTagName('tr')[$time2]->nodeValue;
-            if($tr.contains('Registrations')){
+            if(strpos($tr, 'Uptime') !== false){
                 
             }else{
                 
