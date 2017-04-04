@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<link href='/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='/manifest.json' rel='manifest'>
+<meta content='#282c37' name='theme-color'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<title>Mastodon Portal</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./ping.js"></script>
+<link rel="stylesheet" media="all" href="style.css" />
+    <script src="mastodon.js"></script>
+
+<meta content='Mastodon' property='og:site_name'>
+<meta content='website' property='og:type'>
+<meta content='mastodon Portal' property='og:title'>
+<meta content='Mastodon is a free, open-source social network server. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Anyone can run Mastodon and participate in the social network seamlessly' property='og:description'>
+<meta content='mastodon_logo.jpg' property='og:image'>
+<meta content='400' property='og:image:width'>
+<meta content='400' property='og:image:height'>
+<meta content='summary' property='twitter:card'>
+
+</head>
+<body class='about-body' onload="begin()">
+<div class='wrapper'>
+<h1>
+<img src="logo.png" alt="Logo" />
+Mastodon Portal
+</h1>
+<p id="description">Mastodon is a <em>free, open-source</em> social network. A <em>decentralized</em> alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust &mdash; whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the <em>social network</em> seamlessly.When you click <em>Get Started</ em> you will be redirected directly to the selected instance.</p>
+<div class='screenshot-with-signup'>
+<div class='mascot'><img src="fluffy%20elephant%20friend.png" alt="Fluffy elephant friend" /></div>
+<div novalidate="novalidate" class="simple_form new_user">
+    <div class="input string required user_account_username">
+        <input aria-label="Instance" class="string required" placeholder="Instance" type="text" value="" name="instance" id="user_account_attributes_instance" />
+    </div>
+<div class='actions'>
+<button name="button" onclick="getStarted()" class="btn" id="getstarted">Get started</button>
+</div>
+<div class='info'>
+<a class="webapp-btn" href="/auth/sign_in">Log in</a>
+·
+<a href="/about/more" id="aboutmore">About this instance</a>
+</div>
+</div></div>
+<h3>What sets Mastodon apart</h3>
+<div class='features-list'>
+<div class='features-list__column'>
+<ul class='fa-ul'>
+<li>
+<i class="fa fa-li fa-check-square"></i>
+Timelines are chronological
+</li>
+<li>
+<i class="fa fa-li fa-check-square"></i>
+Public timelines
+</li>
+<li>
+<i class="fa fa-li fa-check-square"></i>
+500 characters per post
+</li>
+<li>
+<i class="fa fa-li fa-check-square"></i>
+GIFV sets and short videos
+</li>
+</ul>
+</div>
+<div class='features-list__column'>
+<ul class='fa-ul'>
+<li>
+<i class="fa fa-li fa-check-square"></i>
+Granular, per-post privacy settings
+</li>
+<li>
+<i class="fa fa-li fa-check-square"></i>
+Rich block and muting tools
+</li>
+<li>
+<i class="fa fa-li fa-check-square"></i>
+Ethical design: no ads, no tracking
+</li>
+<li>
+<i class="fa fa-li fa-check-square"></i>
+Open API for apps and services
+</li>
+</ul>
+</div>
+</div>
+<div class='actions'>
+<div class='info'>
+<a href="/terms">Terms</a>
+·
+<a href="https://github.com/tootsuite/mastodon/blob/master/docs/Using-Mastodon/Apps.md">Apps</a>
+·
+<a href="https://github.com/tootsuite/mastodon">Source code</a>
+·
+<a href="https://github.com/tootsuite/mastodon/blob/master/docs/Using-Mastodon/List-of-Mastodon-instances.md">Other instances</a>
+</div>
+</div>
+</div>
+
+</body>
+</html>
