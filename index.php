@@ -57,7 +57,24 @@ Mastodon Portal
         <input aria-label="Instance" class="string required" placeholder="Instance" type="text" value="" name="instance" id="user_account_attributes_instance" />
     </div>
 <div class='actions'>
-<button name="button" onclick="getStarted()" class="btn" id="getstarted">Get started</button>
+<button name="button" onclick="getStarted()" class="btn" id="getstarted">
+<?php 
+    switch ($lang){
+    case "fr":
+        echo "Commencer";
+        break;
+    case "it":
+        echo "Cominciare";
+        break;
+    case "es":
+        echo "Inicio";
+        break;        
+    default:
+        echo "Get Started";
+        break;
+}
+?>
+</button>
 </div>
 <div class='info'>
 <a class="webapp-btn" href="/auth/sign_in">Log in</a>
