@@ -177,7 +177,7 @@ Mastodon Portal
 <ul class='fa-ul'>
 <li>
 
-<i class="fa fa-li fa-check-square"></i>
+<img src="check.svg" style="height: 1em;width: auto;">
 <?php
     
     switch ($lang){
@@ -198,7 +198,7 @@ Mastodon Portal
 ?>
 </li>
 <li>
-<i class="fa fa-li fa-check-square"></i>
+<img src="check.svg" style="height: 1em;width: auto;">
     <?php
     
     switch ($lang){
@@ -219,7 +219,7 @@ Mastodon Portal
 ?>
 </li>
 <li>
-<i class="fa fa-li fa-check-square"></i>
+<img src="check.svg" style="height: 1em;width: auto;">
     <?php
     
     switch ($lang){
@@ -240,7 +240,7 @@ Mastodon Portal
 ?>
 </li>
 <li>
-<i class="fa fa-li fa-check-square"></i>
+<img src="check.svg" style="height: 1em;width: auto;">
     <?php
     
     switch ($lang){
@@ -265,7 +265,7 @@ Mastodon Portal
 <div class='features-list__column'>
 <ul class='fa-ul'>
 <li>
-<i class="fa fa-li fa-check-square"></i>
+<img src="check.svg" style="height: 1em;width: auto;">
     <?php
     
     switch ($lang){
@@ -286,7 +286,7 @@ Mastodon Portal
 ?>
 </li>
 <li>
-<i class="fa fa-li fa-check-square"></i>
+<img src="check.svg" style="height: 1em;width: auto;">
     <?php
     
     switch ($lang){
@@ -307,7 +307,7 @@ Mastodon Portal
 ?>
 </li>
 <li>
-<i class="fa fa-li fa-check-square"></i>
+<img src="check.svg" style="height: 1em;width: auto;">
     <?php
     
     switch ($lang){
@@ -328,7 +328,7 @@ Mastodon Portal
 ?>
 </li>
 <li>
-<i class="fa fa-li fa-check-square"></i>
+<img src="check.svg" style="height: 1em;width: auto;">
 <?php
     
     switch ($lang){
