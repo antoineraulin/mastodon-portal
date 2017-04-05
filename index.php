@@ -158,16 +158,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<p>Ce qui distingue Mastodon</p>";
+        echo "<p><em>Ce qui distingue Mastodon</em></p>";
         break;
     case "it":
-        echo "<p>Ciò che distingue Mastodon a parte</p>";
+        echo "<p><em>Ciò che distingue Mastodon a parte</em></p>";
         break;
     case "es":
-        echo "<p>Lo que distingue a Mastodon</p>";
+        echo "<p><em>Lo que distingue a Mastodon</em></p>";
         break;        
     default:
-        echo "<p>What sets Mastodon apart</p>";
+        echo "<p><em>What sets Mastodon apart</em></p>";
         break;
 }
     
