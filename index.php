@@ -203,16 +203,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<p>La timeline public</p>";
+        echo "<p style=\"display:inline-block;\">La timeline public</p>";
         break;
     case "it":
-        echo "<p>Timelines pubblici</p>";
+        echo "<p style=\"display:inline-block;\">Timelines pubblici</p>";
         break;
     case "es":
-        echo "<p>timelines públicas</p>";
+        echo "<p style=\"display:inline-block;\">timelines públicas</p>";
         break;        
     default:
-        echo "<p>Public timelines</p>";
+        echo "<p style=\"display:inline-block;\">Public timelines</p>";
         break;
 }
     
@@ -224,16 +224,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<p>500 caractères par message</p>";
+        echo "<p style=\"display:inline-block;\">500 caractères par message</p>";
         break;
     case "it":
-        echo "<p>500 caratteri per post</p>";
+        echo "<p style=\"display:inline-block;\">500 caratteri per post</p>";
         break;
     case "es":
-        echo "<p>500 caracteres por publicación</p>";
+        echo "<p style=\"display:inline-block;\"500 caracteres por publicación</p>";
         break;        
     default:
-        echo "<p>500 characters per post</p>";
+        echo "<p style=\"display:inline-block;\">500 characters per post</p>";
         break;
 }
     
@@ -245,16 +245,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<p>GIF animé et vidéos courtes</p>";
+        echo "<p style=\"display:inline-block;\">GIF animé et vidéos courtes</p>";
         break;
     case "it":
-        echo "<p>GIF animati e brevi video</p>";
+        echo "<p style=\"display:inline-block;\">GIF animati e brevi video</p>";
         break;
     case "es":
-        echo "<p>GIF animados y vídeos de corta duración</p>";
+        echo "<p style=\"display:inline-block;\">GIF animados y vídeos de corta duración</p>";
         break;        
     default:
-        echo "<p>GIFV sets and short videos</p>";
+        echo "<p style=\"display:inline-block;\">GIFV sets and short videos</p>";
         break;
 }
     
@@ -270,16 +270,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<p>Paramètres de confidentialité par message</p>";
+        echo "<p style=\"display:inline-block;\">Paramètres de confidentialité par message</p>";
         break;
     case "it":
-        echo "<p>Paramètres riservatezza par messaggio</p>";
+        echo "<p style=\"display:inline-block;\">Paramètres riservatezza par messaggio</p>";
         break;
     case "es":
-        echo "<p>Parámetros de confidencialidad por mensaje</p>";
+        echo "<p style=\"display:inline-block;\">Parámetros de confidencialidad por mensaje</p>";
         break;        
     default:
-        echo "<p>Granular, per-post privacy settings</p>";
+        echo "<p style=\"display:inline-block;\">Granular, per-post privacy settings</p>";
         break;
 }
     
@@ -291,16 +291,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<p>Messages riches et possibilité de mettre sous silence</p>";
+        echo "<p style=\"display:inline-block;\">Messages riches et possibilité de mettre sous silence</p>";
         break;
     case "it":
-        echo "<p>Paramètres riservatezza par messaggio</p>";
+        echo "<p style=\"display:inline-block;\">Paramètres riservatezza par messaggio</p>";
         break;
     case "es":
-        echo "<p>mensajes ricos y oportunidad de silencio</p>";
+        echo "<p style=\"display:inline-block;\">mensajes ricos y oportunidad de silencio</p>";
         break;        
     default:
-        echo "<p>Rich block and muting tools</p>";
+        echo "<p style=\"display:inline-block;\">Rich block and muting tools</p>";
         break;
 }
     
@@ -312,16 +312,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<p>Conception éthique: aucune publicité, aucun suivi</p>";
+        echo "<p style=\"display:inline-block;\">Conception éthique: aucune publicité, aucun suivi</p>";
         break;
     case "it":
-        echo "<p>design etico: nessun annuncio, nessun inseguimento</p>";
+        echo "<p style=\"display:inline-block;\">design etico: nessun annuncio, nessun inseguimento</p>";
         break;
     case "es":
-        echo "<p>Diseño ético: sin anuncios, sin seguimiento</p>";
+        echo "<p style=\"display:inline-block;\">Diseño ético: sin anuncios, sin seguimiento</p>";
         break;        
     default:
-        echo "<p>Ethical design: no ads, no tracking</p>";
+        echo "<p style=\"display:inline-block;\">Ethical design: no ads, no tracking</p>";
         break;
 }
     
@@ -333,16 +333,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<p>API ouverte pour les applications et les services</p>";
+        echo "<p style=\"display:inline-block;\">API ouverte pour les applications et les services</p>";
         break;
     case "it":
-        echo "<p>Open API per le applicazioni e servizi</p>";
+        echo "<p style=\"display:inline-block;\">Open API per le applicazioni e servizi</p>";
         break;
     case "es":
-        echo "<p>API abierta para aplicaciones y servicios</p>";
+        echo "<p style=\"display:inline-block;\">API abierta para aplicaciones y servicios</p>";
         break;        
     default:
-        echo "<p>Open API for apps and services</p>";
+        echo "<p style=\"display:inline-block;\">Open API for apps and services</p>";
         break;
 }
     
