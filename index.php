@@ -143,31 +143,31 @@ Mastodon Portal
 <?php
     switch ($lang){
     case "fr":
-        echo "<h2>Mastodon compte actuellement ".$usercount." utilisateurs</h2>";
+        echo "<p>Mastodon compte actuellement ".$usercount." utilisateurs</p>";
         break;
     case "it":
-        echo "<h2>Mastodon ha attualmente ".$usercount." utenti</h2>";
+        echo "<p>Mastodon ha attualmente ".$usercount." utenti</p>";
         break;
     case "es":
-        echo "<h2>Mastodon tiene actualmente ".$usercount." usuarios</h2>";
+        echo "<p>Mastodon tiene actualmente ".$usercount." usuarios</p>";
         break;        
     default:
-        echo "<h2>Mastodon currently has ".$usercount." users</h2>";
+        echo "<p>Mastodon currently has ".$usercount." users</p>";
         break;
 }
     
     switch ($lang){
     case "fr":
-        echo "<h3>Ce qui distingue Mastodon</h3>";
+        echo "<p>Ce qui distingue Mastodon</p>";
         break;
     case "it":
-        echo "<h3>Ciò che distingue Mastodon a parte</h3>";
+        echo "<p>Ciò che distingue Mastodon a parte</p>";
         break;
     case "es":
-        echo "<h3>Lo que distingue a Mastodon</h3>";
+        echo "<p>Lo que distingue a Mastodon</p>";
         break;        
     default:
-        echo "<h3>What sets Mastodon apart</h3>";
+        echo "<p>What sets Mastodon apart</p>";
         break;
 }
     
@@ -182,16 +182,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<h3>Les timelines sont chronologiques</h3>";
+        echo "<p>Les timelines sont chronologiques</p>";
         break;
     case "it":
-        echo "<h3>Timelines sono cronologico</h3>";
+        echo "<p>Timelines sono cronologico</p>";
         break;
     case "es":
-        echo "<h3>Los timelines son cronológicos</h3>";
+        echo "<p>Los timelines son cronológicos</p>";
         break;        
     default:
-        echo "<h3>Timelines are chronological</h3>";
+        echo "<p>Timelines are chronological</p>";
         break;
 }
     
@@ -203,16 +203,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<h3>La timeline public</h3>";
+        echo "<p>La timeline public</p>";
         break;
     case "it":
-        echo "<h3>Timelines pubblici</h3>";
+        echo "<p>Timelines pubblici</p>";
         break;
     case "es":
-        echo "<h3>timelines públicas</h3>";
+        echo "<p>timelines públicas</p>";
         break;        
     default:
-        echo "<h3>Public timelines</h3>";
+        echo "<p>Public timelines</p>";
         break;
 }
     
@@ -224,16 +224,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<h3>500 caractères par message</h3>";
+        echo "<p>500 caractères par message</p>";
         break;
     case "it":
-        echo "<h3>500 caratteri per post</h3>";
+        echo "<p>500 caratteri per post</p>";
         break;
     case "es":
-        echo "<h3>500 caracteres por publicación</h3>";
+        echo "<p>500 caracteres por publicación</p>";
         break;        
     default:
-        echo "<h3>500 characters per post</h3>";
+        echo "<p>500 characters per post</p>";
         break;
 }
     
@@ -245,16 +245,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<h3>GIF animé et vidéos courtes</h3>";
+        echo "<p>GIF animé et vidéos courtes</p>";
         break;
     case "it":
-        echo "<h3>GIF animati e brevi video</h3>";
+        echo "<p>GIF animati e brevi video</p>";
         break;
     case "es":
-        echo "<h3>GIF animados y vídeos de corta duración</h3>";
+        echo "<p>GIF animados y vídeos de corta duración</p>";
         break;        
     default:
-        echo "<h3>GIFV sets and short videos</h3>";
+        echo "<p>GIFV sets and short videos</p>";
         break;
 }
     
@@ -270,16 +270,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<h3>Paramètres de confidentialité par message</h3>";
+        echo "<p>Paramètres de confidentialité par message</p>";
         break;
     case "it":
-        echo "<h3>Paramètres riservatezza par messaggio</h3>";
+        echo "<p>Paramètres riservatezza par messaggio</p>";
         break;
     case "es":
-        echo "<h3>Parámetros de confidencialidad por mensaje</h3>";
+        echo "<p>Parámetros de confidencialidad por mensaje</p>";
         break;        
     default:
-        echo "<h3>Granular, per-post privacy settings</h3>";
+        echo "<p>Granular, per-post privacy settings</p>";
         break;
 }
     
@@ -291,16 +291,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<h3>Messages riches et possibilité de mettre sous silence</h3>";
+        echo "<p>Messages riches et possibilité de mettre sous silence</p>";
         break;
     case "it":
-        echo "<h3>Paramètres riservatezza par messaggio</h3>";
+        echo "<p>Paramètres riservatezza par messaggio</p>";
         break;
     case "es":
-        echo "<h3>mensajes ricos y oportunidad de silencio</h3>";
+        echo "<p>mensajes ricos y oportunidad de silencio</p>";
         break;        
     default:
-        echo "<h3>Rich block and muting tools</h3>";
+        echo "<p>Rich block and muting tools</p>";
         break;
 }
     
@@ -312,16 +312,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<h3>Conception éthique: aucune publicité, aucun suivi</h3>";
+        echo "<p>Conception éthique: aucune publicité, aucun suivi</p>";
         break;
     case "it":
-        echo "<h3>design etico: nessun annuncio, nessun inseguimento</h3>";
+        echo "<p>design etico: nessun annuncio, nessun inseguimento</p>";
         break;
     case "es":
-        echo "<h3>Diseño ético: sin anuncios, sin seguimiento</h3>";
+        echo "<p>Diseño ético: sin anuncios, sin seguimiento</p>";
         break;        
     default:
-        echo "<h3>Ethical design: no ads, no tracking</h3>";
+        echo "<p>Ethical design: no ads, no tracking</p>";
         break;
 }
     
@@ -333,16 +333,16 @@ Mastodon Portal
     
     switch ($lang){
     case "fr":
-        echo "<h3>API ouverte pour les applications et les services</h3>";
+        echo "<p>API ouverte pour les applications et les services</p>";
         break;
     case "it":
-        echo "<h3>Open API per le applicazioni e servizi</h3>";
+        echo "<p>Open API per le applicazioni e servizi</p>";
         break;
     case "es":
-        echo "<h3>API abierta para aplicaciones y servicios</h3>";
+        echo "<p>API abierta para aplicaciones y servicios</p>";
         break;        
     default:
-        echo "<h3>Open API for apps and services</h3>";
+        echo "<p>Open API for apps and services</p>";
         break;
 }
     
