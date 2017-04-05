@@ -136,25 +136,111 @@ Mastodon Portal
     ?>
 </div>
 </div></div>
-<h3>What sets Mastodon apart</h3>
+<?php
+    
+    switch ($lang){
+    case "fr":
+        echo "<h3>Ce qui distingue Mastodon</h3>";
+        break;
+    case "it":
+        echo "<h3>Ciò che distingue Mastodon a parte</h3>";
+        break;
+    case "es":
+        echo "<h3>Lo que distingue a Mastodon</h3>";
+        break;        
+    default:
+        echo "<h3>What sets Mastodon apart</h3>";
+        break;
+}
+    
+?>
 <div class='features-list'>
 <div class='features-list__column'>
 <ul class='fa-ul'>
 <li>
+
 <i class="fa fa-li fa-check-square"></i>
-Timelines are chronological
+<?php
+    
+    switch ($lang){
+    case "fr":
+        echo "<h3>Les timelines sont chronologiques</h3>";
+        break;
+    case "it":
+        echo "<h3>Timelines sono cronologico</h3>";
+        break;
+    case "es":
+        echo "<h3>Los timelines son cronológicos</h3>";
+        break;        
+    default:
+        echo "<h3>Timelines are chronological</h3>";
+        break;
+}
+    
+?>
 </li>
 <li>
 <i class="fa fa-li fa-check-square"></i>
-Public timelines
+    <?php
+    
+    switch ($lang){
+    case "fr":
+        echo "<h3>La timeline public</h3>";
+        break;
+    case "it":
+        echo "<h3>Timelines pubblici</h3>";
+        break;
+    case "es":
+        echo "<h3>timelines públicas</h3>";
+        break;        
+    default:
+        echo "<h3>Public timelines</h3>";
+        break;
+}
+    
+?>
 </li>
 <li>
 <i class="fa fa-li fa-check-square"></i>
-500 characters per post
+    <?php
+    
+    switch ($lang){
+    case "fr":
+        echo "<h3>500 caractères par message</h3>";
+        break;
+    case "it":
+        echo "<h3>500 caratteri per post</h3>";
+        break;
+    case "es":
+        echo "<h3>500 caracteres por publicación</h3>";
+        break;        
+    default:
+        echo "<h3>500 characters per post</h3>";
+        break;
+}
+    
+?>
 </li>
 <li>
 <i class="fa fa-li fa-check-square"></i>
-GIFV sets and short videos
+    <?php
+    
+    switch ($lang){
+    case "fr":
+        echo "<h3>GIF animé et vidéos courtes</h3>";
+        break;
+    case "it":
+        echo "<h3>GIF animati e brevi video</h3>";
+        break;
+    case "es":
+        echo "<h3>GIF animados y vídeos de corta duración</h3>";
+        break;        
+    default:
+        echo "<h3>GIFV sets and short videos</h3>";
+        break;
+}
+    
+?>
 </li>
 </ul>
 </div>
@@ -162,27 +248,97 @@ GIFV sets and short videos
 <ul class='fa-ul'>
 <li>
 <i class="fa fa-li fa-check-square"></i>
-Granular, per-post privacy settings
+    <?php
+    
+    switch ($lang){
+    case "fr":
+        echo "<h3>Paramètres de confidentialité par message</h3>";
+        break;
+    case "it":
+        echo "<h3>Paramètres riservatezza par messaggio</h3>";
+        break;
+    case "es":
+        echo "<h3>Parámetros de confidencialidad por mensaje</h3>";
+        break;        
+    default:
+        echo "<h3>Granular, per-post privacy settings</h3>";
+        break;
+}
+    
+?>
 </li>
 <li>
 <i class="fa fa-li fa-check-square"></i>
-Rich block and muting tools
+    <?php
+    
+    switch ($lang){
+    case "fr":
+        echo "<h3>Messages riches et possibilité de mettre sous silence</h3>";
+        break;
+    case "it":
+        echo "<h3>Paramètres riservatezza par messaggio</h3>";
+        break;
+    case "es":
+        echo "<h3>mensajes ricos y oportunidad de silencio</h3>";
+        break;        
+    default:
+        echo "<h3>Rich block and muting tools</h3>";
+        break;
+}
+    
+?>
 </li>
 <li>
 <i class="fa fa-li fa-check-square"></i>
-Ethical design: no ads, no tracking
+    <?php
+    
+    switch ($lang){
+    case "fr":
+        echo "<h3>Conception éthique: aucune publicité, aucun suivi</h3>";
+        break;
+    case "it":
+        echo "<h3>design etico: nessun annuncio, nessun inseguimento</h3>";
+        break;
+    case "es":
+        echo "<h3>Diseño ético: sin anuncios, sin seguimiento</h3>";
+        break;        
+    default:
+        echo "<h3>Ethical design: no ads, no tracking</h3>";
+        break;
+}
+    
+?>
 </li>
 <li>
 <i class="fa fa-li fa-check-square"></i>
-Open API for apps and services
+<?php
+    
+    switch ($lang){
+    case "fr":
+        echo "<h3>API ouverte pour les applications et les services</h3>";
+        break;
+    case "it":
+        echo "<h3>Open API per le applicazioni e servizi</h3>";
+        break;
+    case "es":
+        echo "<h3>API abierta para aplicaciones y servicios</h3>";
+        break;        
+    default:
+        echo "<h3>Open API for apps and services</h3>";
+        break;
+}
+    
+?>
 </li>
 </ul>
 </div>
 </div>
 <div class='actions'>
 <div class='info'>
-<a href="/terms">Terms</a>
-·
+<?php
+  echo '<a href="https://'.$instancechoosed.'/terms">Terms</a>'; 
+    echo '·';
+?>
 <a href="https://github.com/tootsuite/mastodon/blob/master/docs/Using-Mastodon/Apps.md">Apps</a>
 ·
 <a href="https://github.com/tootsuite/mastodon">Source code</a>
