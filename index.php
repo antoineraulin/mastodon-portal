@@ -32,6 +32,7 @@
     $time = true;
     $time2 = 0;
     $instancelist = [];
+    $usercount = 0;
     while($time == true){
         
         try{
@@ -43,8 +44,11 @@
                 $time = false;
             }else{
                 $content = explode("\n", $tr);
-                $content[1] = $string = preg_replace('/\s/', '', $content[1]);
-                $content[3] = $string = preg_replace('/\s/', '', $content[3]);
+                $content[1] = preg_replace('/\s/', '', $content[1]);
+                $content[2] = preg_replace('/\s/', '', $content[2]);
+                $content[3] = preg_replace('/\s/', '', $content[3]);
+                $int = (int) preg_replace('/\D/', '', $content[2]);
+                $usercount = $usercount + $int;
                 if($content[0] == "UP" && $content[3] == "Yes"){
                     array_push($instancelist, $content[1]);
                 }
@@ -137,6 +141,20 @@ Mastodon Portal
 </div>
 </div></div>
 <?php
+    switch ($lang){
+    case "fr":
+        echo "<h2>Mastodon compte actuellement ".$usercount." utilisateurs</h2>";
+        break;
+    case "it":
+        echo "<h2>Mastodon ha attualmente ".$usercount." utenti</h2>";
+        break;
+    case "es":
+        echo "<h2>Mastodon tiene actualmente ".$usercount." usuarios</h2>";
+        break;        
+    default:
+        echo "<h2>Mastodon currently has ".$usercount." users</h2>";
+        break;
+}
     
     switch ($lang){
     case "fr":
