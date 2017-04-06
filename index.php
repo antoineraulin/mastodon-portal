@@ -76,18 +76,6 @@
     $instancechoosed = $instancelist[$k];
     
     $abouthtml = file_get_contents("http://".$instancechoosed."/about/more");
-    try{
-    $divpanel = get_string_between($abouthtml, '<div class="panel">', '</div>');
-    $divpanel = get_string_between($divpanel, '<p>', '</p>');
-    }catch (Exception $e){
-        $divpanel == "";
-    }
-    if($divpanel != ""){
-        $instanceDescription = $divpanel;
-    }else{
-     $instanceDescription = "This instance has no notable differences compared to the original version of mastodon.";   
-    }
-
     $connectedinstances = get_string_between($abouthtml, '<span>Connected to</span>', '</strong>');
     $connectedinstances = preg_replace('/\s/', '', $connectedinstances);
     $connectedinstances = preg_replace('<strong>', '', $connectedinstances);
@@ -110,21 +98,20 @@ Mastodon Portal
     <?php
     switch ($lang){
     case "fr":
-        echo "<p>Mastodon est un réseau social <em>gratuit et open source</em>. Une alternative <em>décentralisée</em> aux plates-formes commerciales, elle évite les risques d'une seule société qui monopolise vos communications. Choisissez un serveur dont vous avez confiance. Selon votre choix , vous pouvez interagir avec tous les autres ou non. N'importe qui peut exécuter sa propre instance de Mastodon et participer au <em>réseau social</em> de façon transparente.<br>Sur mastodon un serveur s'appelle une instance<br>Mastodon Portal vérifie que l'instance qui vous est proposée est accessible et qu'il est possible d'y créer un compte.<br>Lorsque vous cliquerez sur <em>Commencer</em> vous serez redirigé directement sur l'instance choisie.<br><br>Mastodon Portal vous propose l'instance ".$instancechoosed." .</p>";
+        echo "<p>Mastodon est un réseau social <em>gratuit et open source</em>. Une alternative <em>décentralisée</em> aux plates-formes commerciales, elle évite les risques d'une seule société qui monopolise vos communications. Choisissez un serveur dont vous avez confiance. Selon votre choix , vous pouvez interagir avec tous les autres ou non. N'importe qui peut exécuter sa propre instance de Mastodon et participer au <em>réseau social</em> de façon transparente.<br>Sur mastodon un serveur s'appelle une instance<br>Mastodon Portal vérifie que l'instance qui vous est proposée est accessible et qu'il est possible d'y créer un compte.<br>Lorsque vous cliquerez sur <em>Commencer</em> vous serez redirigé directement sur l'instance choisie.<br>Mastodon Portal vous propose l'instance ".$instancechoosed." .</p>";
         break;
     case "it":
-        echo "<p>Mastodon è un social networking <em>libero e open source</em>. Un <em>decentrata</em> alternativa alle piattaforme commerciali, evita il rischio di una singola azienda che monopolizza le vostre comunicazioni. Scegli un server di fiducia. A seconda della scelta, è possibile interagire con tutti gli altri oppure no. Chiunque può eseguire la propria istanza di Mastodon e partecipare nella <em>rete sociale</em> senza soluzione di continuità.<br>Mastodon su un server si chiama un'istanza<br>Mastodon Portal controlla che un'istanza che viene offerto è disponibile ed è possibile creare un account.<br>Quando si fa clic <em>Cominciare</em>, sarai portato direttamente all'istanza selezionata.<br><br>Mastodon portal propone l'istanza ".$instancechoosed." .</p>";
+        echo "<p>Mastodon è un social networking <em>libero e open source</em>. Un <em>decentrata</em> alternativa alle piattaforme commerciali, evita il rischio di una singola azienda che monopolizza le vostre comunicazioni. Scegli un server di fiducia. A seconda della scelta, è possibile interagire con tutti gli altri oppure no. Chiunque può eseguire la propria istanza di Mastodon e partecipare nella <em>rete sociale</em> senza soluzione di continuità.<br>Mastodon su un server si chiama un'istanza<br>Mastodon Portal controlla che un'istanza che viene offerto è disponibile ed è possibile creare un account.<br>Quando si fa clic <em>Cominciare</em>, sarai portato direttamente all'istanza selezionata.<br>Mastodon portal propone l'istanza ".$instancechoosed." .</p>";
         break;
     case "es":
-        echo "<p>Mastodon es una red social <em>gratuita y de código abierto</em>. Una alternativa <em>descentralizada</em> a las plataformas comerciales, se evita el riesgo de una única empresa que monopoliza sus comunicaciones. Elegir un servidor de confianza. Dependiendo de su elección, se puede interactuar con todos los demás o no. Cualquiera puede ejecutar su propia instancia de Mastodon y participar en la <em>red social</em> sin problemas.<br>En Mastodon el servidor se llama una instancia<br>Mastodon Portal comprueba que una instancia que se ofrece está disponible y es posible crear una cuenta.<br> Al hacer clic en <em>Inicio</em>, usted será llevado directamente a la instancia seleccionada.<br><br>Mastodon Portal propone la instancia ".$instancechoosed." .</p>";
+        echo "<p>Mastodon es una red social <em>gratuita y de código abierto</em>. Una alternativa <em>descentralizada</em> a las plataformas comerciales, se evita el riesgo de una única empresa que monopoliza sus comunicaciones. Elegir un servidor de confianza. Dependiendo de su elección, se puede interactuar con todos los demás o no. Cualquiera puede ejecutar su propia instancia de Mastodon y participar en la <em>red social</em> sin problemas.<br>En Mastodon el servidor se llama una instancia<br>Mastodon Portal comprueba que una instancia que se ofrece está disponible y es posible crear una cuenta.<br> Al hacer clic en <em>Inicio</em>, usted será llevado directamente a la instancia seleccionada.<br>Mastodon Portal propone la instancia ".$instancechoosed." .</p>";
         break;        
     default:
-        echo "<p>Mastodon is a <em>free, open-source</em> social network. A <em>decentralized</em> alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust &mdash; whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the <em>social network</em> seamlessly.<br>On mastodon a server is called an instance<br>Mastodon Portal verifies that the instance that is proposed to you is accessible and that it is possible to create an account there.<br>When you click <em>Get Started</em> you will be redirected directly to the selected instance.<br><br>Mastodon Portal proposes the instance ".$instancechoosed." .</p>";
+        echo "<p>Mastodon is a <em>free, open-source</em> social network. A <em>decentralized</em> alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust &mdash; whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the <em>social network</em> seamlessly.<br>On mastodon a server is called an instance<br>Mastodon Portal verifies that the instance that is proposed to you is accessible and that it is possible to create an account there.<br>When you click <em>Get Started</em> you will be redirected directly to the selected instance.<br>Mastodon Portal proposes the instance ".$instancechoosed." .</p>";
         break;
 }
     echo "<br>";
     echo "<p><em>Description of the instance</em></p>";
-    echo "<p>".$instanceDescription."</p>";
     echo "<p><strong>".$connectedinstancesStatus."</strong></p>";
     
     ?>
