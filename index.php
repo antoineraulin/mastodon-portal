@@ -75,18 +75,17 @@
     $k = array_rand($instancelist);
     $instancechoosed = $instancelist[$k];
     
-    $abouthtml = new DOMDocument();
-    $abouthtml->loadHTMLFile("http://".$instancechoosed."/about/more");
-    $body = $abouthtml->getElementsByTagName('body')[0]->nodeValue;
+    $abouthtml = file_get_contents("http://".$instancechoosed."/about/more");
+    
     $instanceDescription = "This instance has no notable differences compared to the original version of mastodon.";
     try{
-    $instanceDescription = $abouthtml->getElementsByTagName('quote')[0]->nodeValue;
+    $instanceDescription = "";
         if($instanceDescription == ""){
             $instanceDescription = "This instance has no notable differences compared to the original version of mastodon.";
         }
     }catch (Exception $e){
     }
-    $connectedinstances = get_string_between($body, '<span>Connected to</span>', '</strong>');
+    $connectedinstances = get_string_between($abouthtml, '<span>Connected to</span>', '</strong>');
     $connectedinstances = preg_replace('/\s/', '', $connectedinstances);
     $connectedinstances = preg_replace('<strong>', '', $connectedinstances);
     $connectedinstancesint = (int) preg_replace('/\D/', '', $connectedinstances);
