@@ -81,11 +81,13 @@
     $instanceDescription = "This instance has no notable differences compared to the original version of mastodon.";
     try{
     $instanceDescription = $abouthtml->getElementsByTagName('quote')[0]->nodeValue;
+        if($instanceDescription == ""){
+            $instanceDescription = "This instance has no notable differences compared to the original version of mastodon.";
+        }
     }catch (Exception $e){
     }
     $connectedinstances = get_string_between($body, '<span>Connected to</span>', '</strong>');
     $connectedinstances = preg_replace('/\s/', '', $connectedinstances);
-    $connectedinstances = preg_replace('\n', '', $connectedinstances);
     $connectedinstances = preg_replace('<strong>', '', $connectedinstances);
     $connectedinstancesint = (int) preg_replace('/\D/', '', $connectedinstances);
     $connectedinstancesStatus = null;
@@ -118,9 +120,9 @@ Mastodon Portal
         echo "<p>Mastodon is a <em>free, open-source</em> social network. A <em>decentralized</em> alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust &mdash; whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the <em>social network</em> seamlessly.<br>On mastodon a server is called an instance<br>Mastodon Portal verifies that the instance that is proposed to you is accessible and that it is possible to create an account there.<br>When you click <em>Get Started</em> you will be redirected directly to the selected instance.<br><br>Mastodon Portal proposes the instance ".$instancechoosed." .</p>";
         break;
 }
-    echo "<br><br>";
-    echo "<p><em>Description of the instance</em></p><br>";
-    echo "<p>".$instanceDescription."</p><br>";
+    echo "<br>";
+    echo "<p><em>Description of the instance</em></p>";
+    echo "<p>".$instanceDescription."</p>";
     echo "<p><strong>".$connectedinstancesStatus."</strong></p>";
     
     ?>
