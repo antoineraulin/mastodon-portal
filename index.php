@@ -76,15 +76,18 @@
     $instancechoosed = $instancelist[$k];
     
     $abouthtml = file_get_contents("http://".$instancechoosed."/about/more");
-    
-    $instanceDescription = "This instance has no notable differences compared to the original version of mastodon.";
     try{
-    $instanceDescription = "";
-        if($instanceDescription == ""){
-            $instanceDescription = "This instance has no notable differences compared to the original version of mastodon.";
-        }
+    $divpanel = get_string_between($abouthtml, '<div class="panel">', '</div>');
+    $divpanel = get_string_between($divpanel, '<p>', '</p>');
     }catch (Exception $e){
+        $divpanel == "";
     }
+    if($divpanel != ""){
+        $instanceDescription = $divpanel;
+    }else{
+     $instanceDescription = "This instance has no notable differences compared to the original version of mastodon.";   
+    }
+
     $connectedinstances = get_string_between($abouthtml, '<span>Connected to</span>', '</strong>');
     $connectedinstances = preg_replace('/\s/', '', $connectedinstances);
     $connectedinstances = preg_replace('<strong>', '', $connectedinstances);
