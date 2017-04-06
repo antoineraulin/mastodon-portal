@@ -387,7 +387,13 @@ Mastodon Portal
 ·
 <a href="https://github.com/tootsuite/mastodon">Source code</a>
 ·
-<a href="https://github.com/tootsuite/mastodon/blob/master/docs/Using-Mastodon/List-of-Mastodon-instances.md">Other instances</a>
+<a href="https://instances.mastodon.xyz">Other instances</a>
+·
+<a href="https://github.com/antoineraulin">My Github</a>
+·
+<a href="https://mastodon.cloud/@antoineraulin">@antoineraulin</a>
+·
+<a href="https://antoineraulin.github.io">My others projects</a>
 </div>
 </div>
 </div>
