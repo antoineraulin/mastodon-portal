@@ -25,7 +25,7 @@
 <meta content='summary' property='twitter:card'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
-#foo {
+.diva {
     position: absolute;
     display: none;
     background: #14161C;
@@ -447,7 +447,7 @@ Mastodon Portal
 </div>
 </div>
 </div>
-<div id="foo">
+<div class="diva" id="foo">
 <center>
 <img src="https://files.mastodon.social/accounts/avatars/000/038/053/original/c20a9da88cbf5459.png?1491298071" alt="C20a9da88cbf5459">
 
@@ -459,10 +459,10 @@ Mastodon Portal
 <a href="https://antoineraulin.github.io" rel="nofollow noopener" target="_blank"><span class="invisible">https://</span><span class="">antoineraulin.github.io</span><span class="invisible"></span></a></p>
 </center>
 </div>
-<div id="numerama">
+<div class="diva" id="numerama">
 <center>
 <img src="https://social.numerama.com/system/accounts/avatars/000/000/006/original/533d33f50876c95e.jpg?1491464361" alt="C20a9da88cbf5459">
-
+<br>
 <b style="color: white;font-family: Arial;">Numerama</b>
 <b style="color: white;font-family: Arial;">@numerama</b>
 
