@@ -513,12 +513,11 @@ $("#num").hover(function(e) {
 }, function() {
     $($(this).data("tooltip")).hide();
 });
-    $("#numeramaArticle").hover(function(e) {
-    $("#numeramaArticle".css({
+$("#numeramaArticle").hover(function(e) {
+    $("#numeramaArticle").css({
     }).stop().show(100);
 }, function() {
-    $("#numeramaArticle").hide();
+    $($(this).data("tooltip")).hide();
 });
-    
 
         </script>
