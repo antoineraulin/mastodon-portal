@@ -135,7 +135,7 @@ Mastodon Portal
     <?php
     switch ($lang){
     case "fr":
-        echo "<p>Mastodon est un réseau social <em>gratuit et open source</em>. Une alternative <em>décentralisée</em> aux plates-formes commerciales, elle évite les risques d'une seule société qui monopolise vos communications. Choisissez un serveur dont vous avez confiance. Selon votre choix , vous pouvez interagir avec tous les autres ou non. N'importe qui peut exécuter sa propre instance de Mastodon et participer au <em>réseau social</em> de façon transparente.<br>Sur mastodon un serveur s'appelle une instance<br>Mastodon Portal vérifie que l'instance qui vous est proposée est accessible et qu'il est possible d'y créer un compte.<br>Lorsque vous cliquerez sur <em>Commencer</em> vous serez redirigé directement sur l'instance choisie.<br>Mastodon Portal vous propose l'instance ".$instancechoosed.".<br>Si pour vous, le fonctionnement de ce réseau social est encore un mystère, Nous vous invitons à lire l'article de <a style=\"text-decoration: none;\" href=\"http://numerama.com\" id=\"num\" data-tooltip=\"#numerama\">Numerama </a> en cliquant <a style=\"text-decoration: none;\" href=\"http://www.numerama.com/tech/246684-debuter-sur-mastodon-9-questions-pour-tout-comprendre-au-reseau-social-decentralise.html\">ici</a></p>.";
+        echo "<p>Mastodon est un réseau social <em>gratuit et open source</em>. Une alternative <em>décentralisée</em> aux plates-formes commerciales, elle évite les risques d'une seule société qui monopolise vos communications. Choisissez un serveur dont vous avez confiance. Selon votre choix , vous pouvez interagir avec tous les autres ou non. N'importe qui peut exécuter sa propre instance de Mastodon et participer au <em>réseau social</em> de façon transparente.<br>Sur mastodon un serveur s'appelle une instance<br>Mastodon Portal vérifie que l'instance qui vous est proposée est accessible et qu'il est possible d'y créer un compte.<br>Lorsque vous cliquerez sur <em>Commencer</em> vous serez redirigé directement sur l'instance choisie.<br>Mastodon Portal vous propose l'instance ".$instancechoosed.".<br>Si pour vous, le fonctionnement de ce réseau social est encore un mystère, Nous vous invitons à lire l'article de <a style=\"text-decoration: none;\" href=\"http://numerama.com\" id=\"num\" data-tooltip=\"#numerama\">Numerama </a> en cliquant <a id=\"numArticle\" data-tooltip=\"#numeramaArticle\" style=\"text-decoration: none;\" href=\"http://www.numerama.com/tech/246684-debuter-sur-mastodon-9-questions-pour-tout-comprendre-au-reseau-social-decentralise.html\">ici</a></p>.";
         break;
     case "it":
         echo "<p>Mastodon è un social networking <em>libero e open source</em>. Un <em>decentrata</em> alternativa alle piattaforme commerciali, evita il rischio di una singola azienda che monopolizza le vostre comunicazioni. Scegli un server di fiducia. A seconda della scelta, è possibile interagire con tutti gli altri oppure no. Chiunque può eseguire la propria istanza di Mastodon e partecipare nella <em>rete sociale</em> senza soluzione di continuità.<br>Mastodon su un server si chiama un'istanza<br>Mastodon Portal controlla che un'istanza che viene offerto è disponibile ed è possibile creare un account.<br>Quando si fa clic <em>Cominciare</em>, sarai portato direttamente all'istanza selezionata.<br>Mastodon portal propone l'istanza ".$instancechoosed." .</p>";
@@ -473,6 +473,9 @@ Mastodon Portal
 <p class="piva">Le média de référence sur l'innovation technologique et la société numérique www.numerama.com</p>
 </center>
 </div>
+<div class="diva" id="numeramaArticle" style="width: 30em">
+<iframe src="http://www.numerama.com/tech/246684-debuter-sur-mastodon-9-questions-pour-tout-comprendre-au-reseau-social-decentralise.html" style="height: 25em;width: 95%">Votre navigateur ne supporte malheureusement pas l'affichage d'aperçu d'article.</iframe>
+</div>
 </body>
 </html>
 <script>
@@ -498,6 +501,14 @@ $("#num").hover(function(e) {
     $($(this).data("tooltip")).css({
         left: e.pageX + 1,
         top: e.pageY - ($("#numerama").height() + 20)
+    }).stop().show(100);
+}, function() {
+    $($(this).data("tooltip")).hide();
+});
+    $("#numArticle").hover(function(e) {
+    $($(this).data("tooltip")).css({
+        left: e.pageX + 1,
+        top: e.pageY - ($("#numeramaArticle").height() + 20)
     }).stop().show(100);
 }, function() {
     $($(this).data("tooltip")).hide();
