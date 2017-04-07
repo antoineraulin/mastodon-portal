@@ -29,12 +29,16 @@
     position: absolute;
     display: none;
     background: #14161C;
-    width: 18em;
+    width: 21em;
   border-radius: 7px;
 }
 .img-circle {
     border-radius: 50%;
 }
+        .piva {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
         </style>
 
 </head>
@@ -456,7 +460,7 @@ Mastodon Portal
 <b style="color: white;font-family: Arial;">Antoine Raulin</b><br>
 <b style="color: white;font-family: Arial;">@antoineraulin</b>
 
-    <p>Développeur Web, Android et iOS. Accros aux nouvelles technos. <a href="https://mastodon.social/tags/materialdesignforever" class="mention hashtag">#<span>MaterialDesignForever</span></a> Développeur de <a href="https://mastodonportal.herokuapp.com" rel="nofollow noopener" target="_blank">mastodonportal.herokuapp.com</a></p>
+    <p class="piva">Développeur Web, Android et iOS. Accros aux nouvelles technos. <a href="https://mastodon.social/tags/materialdesignforever" class="mention hashtag">#<span>MaterialDesignForever</span></a> Développeur de <a href="https://mastodonportal.herokuapp.com" rel="nofollow noopener" target="_blank">mastodonportal.herokuapp.com</a></p>
 </center>
 </div>
 <div class="diva" id="numerama">
@@ -466,7 +470,7 @@ Mastodon Portal
 <b style="color: white;font-family: Arial;">Numerama</b><br>
 <b style="color: white;font-family: Arial;">@numerama</b><br>
 
-<p>Le média de référence sur l'innovation technologique et la société numérique www.numerama.com</p>
+<p class="piva">Le média de référence sur l'innovation technologique et la société numérique www.numerama.com</p>
 </center>
 </div>
 </body>
@@ -485,7 +489,7 @@ Mastodon Portal
         $("#antoine").hover(function(e) {
     $($(this).data("tooltip")).css({
         left: e.pageX + 1,
-        top: e.pageY - 330
+        top: e.pageY - ($("#foo").height() + 20)
     }).stop().show(100);
 }, function() {
     $($(this).data("tooltip")).hide();
@@ -493,7 +497,7 @@ Mastodon Portal
 $("#num").hover(function(e) {
     $($(this).data("tooltip")).css({
         left: e.pageX + 1,
-        top: e.pageY - 330
+        top: e.pageY - ($("#numerama").height() + 20)
     }).stop().show(100);
 }, function() {
     $($(this).data("tooltip")).hide();
