@@ -1,0 +1,70 @@
+<html>
+    <head>
+    <meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<link href='/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+<link rel="icon" type="image/png" href="logo.png" />
+<link href='/manifest.json' rel='manifest'>
+<meta name="google-site-verification" content="a7xjGWAnkqJ3ycjctaNTlmm5dMhwz_vbb-9fNo2VFss" />
+<meta content='#282c37' name='theme-color'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<title>Mastodon Portal Test</title>
+<link rel="stylesheet" media="all" href="style.css" />
+    <script src="mastodon.js"></script>
+
+<meta content='Mastodon' property='og:site_name'>
+<meta content='website' property='og:type'>
+<meta content='mastodon Portal' property='og:title'>
+<meta content='Mastodon is a free, open-source social network server. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Anyone can run Mastodon and participate in the social network seamlessly' property='og:description'>
+<meta content='mastodon_logo.jpg' property='og:image'>
+<meta content='400' property='og:image:width'>
+<meta content='400' property='og:image:height'>
+<meta content='summary' property='twitter:card'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+#foo {
+    position: absolute;
+    display: none;
+    background: #14161C;
+  height: 260px;
+  width: 15em;
+  border-radius: 7px;
+}
+        </style>
+
+    </head>
+    
+    <body>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a style="text-decoration: none;color: black;font-family: Arial" href="http://mastodon.social/@antoineraulin" data-tooltip="#foo">Antoine Raulin</a>
+
+
+<div id="foo">
+<center>
+<img class="u-photo" src="https://files.mastodon.social/accounts/avatars/000/038/053/original/c20a9da88cbf5459.png?1491298071" alt="C20a9da88cbf5459">
+<h1 class="name">
+
+<span class="p-name emojify">Antoine Raulin</span><br>
+<span class="p-nickname">@antoineraulin</span>
+
+</h1>
+<p class="account__header__content p-note emojify">Développeur Web et Android. Accros aux nouvelles technos. <a href="https://mastodon.social/tags/materialdesign" class="mention hashtag">#<span>MaterialDesign</span></a>
+
+<a href="https://antoineraulin.github.io" rel="nofollow noopener" target="_blank"><span class="invisible">https://</span><span class="">antoineraulin.github.io</span><span class="invisible"></span></a></p>
+</center>
+</div>
+    
+    </body>
+</html>
+<script>
+        $("a").hover(function(e) {
+    $($(this).data("tooltip")).css({
+        left: e.pageX + 1,
+        top: e.pageY - 280
+    }).stop().show(100);
+}, function() {
+    $($(this).data("tooltip")).hide();
+});
+
+        </script>

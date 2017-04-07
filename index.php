@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang='en'>
+<html>
 <head>
 <meta charset='utf-8'>
 <meta content='width=device-width, initial-scale=1' name='viewport'>
@@ -23,6 +23,17 @@
 <meta content='400' property='og:image:width'>
 <meta content='400' property='og:image:height'>
 <meta content='summary' property='twitter:card'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+#foo {
+    position: absolute;
+    display: none;
+    background: #14161C;
+  height: 260px;
+  width: 15em;
+  border-radius: 7px;
+}
+        </style>
 
 </head>
 <?php
@@ -430,13 +441,26 @@ Mastodon Portal
 ·
 <a href="https://github.com/antoineraulin">My Github</a>
 ·
-<a href="https://mastodon.social/@antoineraulin">@antoineraulin</a>
+<a href="https://mastodon.social/@antoineraulin" data-tooltip="#foo">@antoineraulin</a>
 ·
-<a href="https://antoineraulin.github.io">My others projects</a>
+<a href="https://antoineraulin.github.io" >My others projects</a>
 </div>
 </div>
 </div>
+<div id="foo">
+<center>
+<img class="u-photo" src="https://files.mastodon.social/accounts/avatars/000/038/053/original/c20a9da88cbf5459.png?1491298071" alt="C20a9da88cbf5459">
+<h1 class="name">
 
+<span class="p-name emojify">Antoine Raulin</span><br>
+<span class="p-nickname">@antoineraulin</span>
+
+</h1>
+<p class="account__header__content p-note emojify">Développeur Web et Android. Accros aux nouvelles technos. <a href="https://mastodon.social/tags/materialdesign" class="mention hashtag">#<span>MaterialDesign</span></a>
+
+<a href="https://antoineraulin.github.io" rel="nofollow noopener" target="_blank"><span class="invisible">https://</span><span class="">antoineraulin.github.io</span><span class="invisible"></span></a></p>
+</center>
+</div>
 </body>
 </html>
 <script>
@@ -449,3 +473,14 @@ Mastodon Portal
   ga('send', 'pageview');
 
 </script>
+<script>
+        $("a").hover(function(e) {
+    $($(this).data("tooltip")).css({
+        left: e.pageX + 1,
+        top: e.pageY - 280
+    }).stop().show(100);
+}, function() {
+    $($(this).data("tooltip")).hide();
+});
+
+        </script>
