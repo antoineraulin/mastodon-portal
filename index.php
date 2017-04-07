@@ -450,12 +450,10 @@ Mastodon Portal
 <div id="foo">
 <center>
 <img src="https://files.mastodon.social/accounts/avatars/000/038/053/original/c20a9da88cbf5459.png?1491298071" alt="C20a9da88cbf5459">
-<h1>
 
 <b style="color: white;font-family: Arial;">Antoine Raulin</b>
 <b style="color: white;font-family: Arial;">@antoineraulin</b>
 
-</h1>
 <p>Développeur Web et Android. Accros aux nouvelles technos. <a href="https://mastodon.social/tags/materialdesign" class="mention hashtag">#<span>MaterialDesign</span></a>
 
 <a href="https://antoineraulin.github.io" rel="nofollow noopener" target="_blank"><span class="invisible">https://</span><span class="">antoineraulin.github.io</span><span class="invisible"></span></a></p>
