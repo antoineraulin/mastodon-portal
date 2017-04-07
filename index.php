@@ -505,8 +505,8 @@ $("#num").hover(function(e) {
 });
     $("#numArticle").hover(function(e) {
     $($(this).data("tooltip")).css({
-        left: e.pageX - 5,
-        top: e.pageY - $("#numeramaArticle").height()
+        left: e.pageX - 50,
+        top: e.pageY - ($("#numeramaArticle").height() - 40 )
     }).stop().show(500);
 }, function() {
     $($(this).data("tooltip")).hide();
