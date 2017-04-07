@@ -489,8 +489,6 @@ Mastodon Portal
 
 </script>
 <script>
-    var theleft = 0;
-    var theright = 0;
         $("#antoine").hover(function(e) {
     $($(this).data("tooltip")).css({
         left: e.pageX + 1,
@@ -508,8 +506,6 @@ $("#num").hover(function(e) {
     $($(this).data("tooltip")).hide();
 });
     $("#numArticle").hover(function(e) {
-        theleft = e.pageX + 1;
-        theright = e.pageY - $("#numeramaArticle").height();
     $($(this).data("tooltip")).css({
         left: e.pageX + 1,
         top: e.pageY - $("#numeramaArticle").height()
@@ -519,8 +515,6 @@ $("#num").hover(function(e) {
 });
     $("#numeramaArticle").hover(function(e) {
     $("#numeramaArticle".css({
-        left: theleft,
-        top: theright
     }).stop().show(100);
 }, function() {
     $("#numeramaArticle").hide();
