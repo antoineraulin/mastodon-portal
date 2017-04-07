@@ -29,8 +29,7 @@
     position: absolute;
     display: none;
     background: #14161C;
-  height: 310px;
-  width: 15em;
+    width: 18em;
   border-radius: 7px;
 }
 .img-circle {
