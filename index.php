@@ -29,7 +29,7 @@
     position: absolute;
     display: none;
     background: #14161C;
-  height: 260px;
+  height: 310px;
   width: 15em;
   border-radius: 7px;
 }
@@ -452,8 +452,8 @@ Mastodon Portal
 <img src="https://files.mastodon.social/accounts/avatars/000/038/053/original/c20a9da88cbf5459.png?1491298071" alt="C20a9da88cbf5459">
 <h1>
 
-<span style="color: white;font-family: Arial;">Antoine Raulin</span><br>
-<span style="color: white;font-family: Arial;">@antoineraulin</span>
+<b style="color: white;font-family: Arial;">Antoine Raulin</b>
+<b style="color: white;font-family: Arial;">@antoineraulin</b>
 
 </h1>
 <p>Développeur Web et Android. Accros aux nouvelles technos. <a href="https://mastodon.social/tags/materialdesign" class="mention hashtag">#<span>MaterialDesign</span></a>
@@ -477,7 +477,7 @@ Mastodon Portal
         $("a").hover(function(e) {
     $($(this).data("tooltip")).css({
         left: e.pageX + 1,
-        top: e.pageY - 280
+        top: e.pageY - 330
     }).stop().show(100);
 }, function() {
     $($(this).data("tooltip")).hide();
