@@ -491,7 +491,7 @@ Mastodon Portal
     $($(this).data("tooltip")).css({
         left: e.pageX + 1,
         top: e.pageY - ($("#foo").height() + 20)
-    }).stop().show(100);
+    }).stop().show(500);
 }, function() {
     $($(this).data("tooltip")).hide();
 });
@@ -499,21 +499,21 @@ $("#num").hover(function(e) {
     $($(this).data("tooltip")).css({
         left: e.pageX + 1,
         top: e.pageY - ($("#numerama").height() + 20)
-    }).stop().show(100);
+    }).stop().show(500);
 }, function() {
     $($(this).data("tooltip")).hide();
 });
     $("#numArticle").hover(function(e) {
     $($(this).data("tooltip")).css({
-        left: e.pageX + 1,
+        left: e.pageX - 5,
         top: e.pageY - $("#numeramaArticle").height()
-    }).stop().show(100);
+    }).stop().show(500);
 }, function() {
     $($(this).data("tooltip")).hide();
 });
 $("#numeramaArticle").hover(function(e) {
     $("#numeramaArticle").css({
-    }).stop().show(100);
+    }).stop().show(500);
 }, function() {
     $("#numeramaArticle").hide();
 });
