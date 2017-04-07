@@ -474,7 +474,7 @@ Mastodon Portal
 </center>
 </div>
 <div class="diva" id="numeramaArticle" style="width: 30em">
-<iframe src="http://www.numerama.com/tech/246684-debuter-sur-mastodon-9-questions-pour-tout-comprendre-au-reseau-social-decentralise.html" style="height: 25em;width: 95%">Votre navigateur ne supporte malheureusement pas l'affichage d'aperçu d'article.</iframe>
+<iframe src="https://www.numerama.com/tech/246684-debuter-sur-mastodon-9-questions-pour-tout-comprendre-au-reseau-social-decentralise.html" style="height: 25em;width: 100%;border-radius: 7px;">Votre navigateur ne supporte malheureusement pas l'affichage d'aperçu d'article.</iframe>
 </div>
 </body>
 </html>
