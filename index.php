@@ -457,9 +457,7 @@ Mastodon Portal
 <b style="color: white;font-family: Arial;">Antoine Raulin</b><br>
 <b style="color: white;font-family: Arial;">@antoineraulin</b>
 
-<p>Développeur Web et Android. Accros aux nouvelles technos. <a href="https://mastodon.social/tags/materialdesign" class="mention hashtag">#<span>MaterialDesign</span></a>
-
-<a href="https://antoineraulin.github.io" rel="nofollow noopener" target="_blank"><span class="invisible">https://</span><span class="">antoineraulin.github.io</span><span class="invisible"></span></a></p>
+    <p>Développeur Web, Android et iOS. Accros aux nouvelles technos. <a href="https://mastodon.social/tags/materialdesignforever" class="mention hashtag">#<span>MaterialDesignForever</span></a> Développeur de <a href="https://mastodonportal.herokuapp.com" rel="nofollow noopener" target="_blank">mastodonportal.herokuapp.com</a></p>
 </center>
 </div>
 <div class="diva" id="numerama">
