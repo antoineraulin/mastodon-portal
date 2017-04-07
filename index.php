@@ -449,14 +449,14 @@ Mastodon Portal
 </div>
 <div id="foo">
 <center>
-<img class="u-photo" src="https://files.mastodon.social/accounts/avatars/000/038/053/original/c20a9da88cbf5459.png?1491298071" alt="C20a9da88cbf5459">
-<h1 class="name">
+<img src="https://files.mastodon.social/accounts/avatars/000/038/053/original/c20a9da88cbf5459.png?1491298071" alt="C20a9da88cbf5459">
+<h1>
 
-<span class="p-name emojify">Antoine Raulin</span><br>
-<span class="p-nickname">@antoineraulin</span>
+<span style="color: white;font-family: Arial;">Antoine Raulin</span><br>
+<span style="color: white;font-family: Arial;">@antoineraulin</span>
 
 </h1>
-<p class="account__header__content p-note emojify">Développeur Web et Android. Accros aux nouvelles technos. <a href="https://mastodon.social/tags/materialdesign" class="mention hashtag">#<span>MaterialDesign</span></a>
+<p>Développeur Web et Android. Accros aux nouvelles technos. <a href="https://mastodon.social/tags/materialdesign" class="mention hashtag">#<span>MaterialDesign</span></a>
 
 <a href="https://antoineraulin.github.io" rel="nofollow noopener" target="_blank"><span class="invisible">https://</span><span class="">antoineraulin.github.io</span><span class="invisible"></span></a></p>
 </center>
