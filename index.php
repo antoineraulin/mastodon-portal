@@ -59,6 +59,7 @@
     $time2 = 0;
     $instancelist = [];
     $usercount = 0;
+    $messagescount = 0;
     while($time == true){
         
         try{
@@ -73,9 +74,12 @@
                 $content[1] = preg_replace('/\s/', '', $content[1]);
                 $content[2] = preg_replace('/\s/', '', $content[2]);
                 $content[3] = preg_replace('/\s/', '', $content[3]);
+                $content[5] = preg_replace('/\s/', '', $content[5]);
                 $int = (int) preg_replace('/\D/', '', $content[2]);
+                $int2 = (int) preg_replace('/\D/', '', $content[3]);
                 $usercount = $usercount + $int;
-                if($content[0] == "UP" && $content[3] == "Yes"){
+                $messagescount = $messagescount + $int2;
+                if($content[0] == "UP" && $content[5] == "Yes"){
                     array_push($instancelist, $content[1]);
                 }
             }
@@ -89,8 +93,17 @@
         
         
     }
+    $messagescount = strrev($messagescount);
+    $messagescount2 = str_split($messagescount, 3);
+    $messagescount = join(' ', $messagescount2);
+    $messagescount = strrev($messagescount);
+    $usercount = strrev($usercount);
+    $usercount2 = str_split($usercount, 3);
+    $usercount = join(' ', $usercount2);
+    $usercount = strrev($usercount);
     $k = array_rand($instancelist);
     $instancechoosed = $instancelist[$k];
+    
     
     $abouthtml = file_get_contents("http://".$instancechoosed."/about/more");
     $connectedinstances = get_string_between($abouthtml, '<span>Connected to</span>', '</strong>');
@@ -235,6 +248,14 @@ Mastodon Portal
         break;        
     default:
         echo "<p>Mastodon currently has ".$usercount." users.</p>";
+        break;
+}
+switch ($lang){
+    case "fr":
+        echo "<p>Les utilisateurs de mastodon se sont échangés ".$messagescount." toots !</p>";
+        break;
+    default:
+        echo "<p>The users of Mastodon exchanged ".$messagescount." toots!</p>";
         break;
 }
     
