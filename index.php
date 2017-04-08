@@ -473,7 +473,6 @@ Mastodon Portal
 <p class="piva">Le média de référence sur l'innovation technologique et la société numérique www.numerama.com</p>
 </center>
 </div>
-<iframe id="numeramaArticle" src="https://www.numerama.com/tech/246684-debuter-sur-mastodon-9-questions-pour-tout-comprendre-au-reseau-social-decentralise.html" style="height: 25em;width: 30em;border-radius: 7px;position: absolute;display: none;">Votre navigateur ne supporte malheureusement pas l'affichage d'aperçu d'article.</iframe>
 </body>
 </html>
 <script>
@@ -502,20 +501,6 @@ $("#num").hover(function(e) {
     }).stop().show(500);
 }, function() {
     $($(this).data("tooltip")).hide();
-});
-    $("#numArticle").hover(function(e) {
-    $($(this).data("tooltip")).css({
-        left: e.pageX - 50,
-        top: e.pageY - ($("#numeramaArticle").height() - 40 )
-    }).stop().show(500);
-}, function() {
-    $($(this).data("tooltip")).hide();
-});
-$("#numeramaArticle").hover(function(e) {
-    $("#numeramaArticle").css({
-    }).stop().show(500);
-}, function() {
-    $("#numeramaArticle").hide();
 });
 
         </script>
