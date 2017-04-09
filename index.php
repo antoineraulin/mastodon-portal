@@ -13,7 +13,6 @@
 <meta content='yes' name='apple-mobile-web-app-capable'>
 <title>Mastodon Portal</title>
 <link rel="stylesheet" media="all" href="style.css" />
-    <script src="mastodon.js"></script>
 
 <meta content='Mastodon' property='og:site_name'>
 <meta content='website' property='og:type'>
@@ -176,7 +175,7 @@ Mastodon Portal
     
     ?>
 <div class='screenshot-with-signup'>
-<div class='mascot'><img src="fluffy%20elephant%20friend.png" alt="Fluffy elephant friend" /></div>
+<div class='mascot'><img src="fluffy%20elephant%20friend.svg" alt="Fluffy elephant friend" /></div>
 <div novalidate="novalidate" class="simple_form new_user">
     <div class="input string required user_account_username">
         <?php
