@@ -6,7 +6,7 @@
 <meta content='width=device-width, initial-scale=1' name='viewport'>
 <meta content='IE=edge' http-equiv='X-UA-Compatible'>
 <link href='/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
-<link rel="icon" type="image/png" href="logo.png" />
+<link rel="icon" type="image/png" href="logo.svg" />
 <link href='/manifest.json' rel='manifest'>
 <meta name="google-site-verification" content="a7xjGWAnkqJ3ycjctaNTlmm5dMhwz_vbb-9fNo2VFss" />
 <meta content='#282c37' name='theme-color'>
@@ -18,7 +18,7 @@
 <meta content='website' property='og:type'>
 <meta content='mastodon Portal' property='og:title'>
 <meta content='Mastodon is a free, open-source social network server. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Anyone can run Mastodon and participate in the social network seamlessly' property='og:description'>
-<meta content='mastodon_logo.jpg' property='og:image'>
+<meta content='fluffy%20elephant%20friend.svg' property='og:image'>
 <meta content='400' property='og:image:width'>
 <meta content='400' property='og:image:height'>
 <meta content='summary' property='twitter:card'>
@@ -141,7 +141,7 @@
 <body class='about-body' onload="begin()">
 <div class='wrapper'>
 <h1>
-<img src="logo.png" alt="Logo" />
+<img src="logo.svg" alt="Logo" />
 Mastodon Portal
 </h1>
     <?php
