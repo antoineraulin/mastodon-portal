@@ -503,7 +503,7 @@ switch ($lang){
 <br>
 <b style="color: white;font-family: Arial;">Why give me a gift?</b><br>
 
-<p class="piva">-because what I do you like?<br>- to support my projects?<br>To help me pay for web hosting?<br>- so I can offer quality services?<br>If you agree with one of these arguments, a donation would not be rejected so that I could continue to innovate.</p><br>
+<p class="piva">-because you like what i do ?<br>- to support my projects?<br>To help me pay for web hosting?<br>- so I can offer quality services?<br>If you agree with one of these arguments, a donation would not be rejected so that I could continue to innovate.</p><br>
 
 </center>
 </div>
