@@ -471,7 +471,7 @@ switch ($lang){
 ·
 <a href="https://antoineraulin.github.io" >My others projects</a>
 ·
-<a href="paypal.me/antoineraulin" >make a donation</a>
+<a href="paypal.me/antoineraulin" id="don" data-tooltip="#donation">make a donation</a>
 </div>
 </div>
 </div>
@@ -530,6 +530,14 @@ $("#num").hover(function(e) {
     $($(this).data("tooltip")).css({
         left: e.pageX + 1,
         top: e.pageY - ($("#numerama").height() + 20)
+    }).stop().show(500);
+}, function() {
+    $($(this).data("tooltip")).hide();
+});
+$("#don").hover(function(e) {
+    $($(this).data("tooltip")).css({
+        left: e.pageX + 1,
+        top: e.pageY - ($("#donation").height() + 20)
     }).stop().show(500);
 }, function() {
     $($(this).data("tooltip")).hide();
