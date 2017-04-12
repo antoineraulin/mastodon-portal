@@ -79,7 +79,7 @@
                 $usercount = $usercount + $int;
                 $messagescount = $messagescount + $int2;
                 if($content[0] == "UP" && $content[6] == "Yes"){
-                    array_push($instancelist, $content[1]);
+                    array_push($instancelist, $content[2]);
                 }
             }
         }catch (Exception $e) {
