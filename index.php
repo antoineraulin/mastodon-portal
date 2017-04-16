@@ -13,6 +13,7 @@
 <meta content='yes' name='apple-mobile-web-app-capable'>
 <title>Mastodon Portal</title>
 <link rel="stylesheet" media="all" href="style.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 <meta content='Mastodon' property='og:site_name'>
 <meta content='website' property='og:type'>
@@ -23,6 +24,7 @@
 <meta content='400' property='og:image:height'>
 <meta content='summary' property='twitter:card'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style>
 .diva {
     position: absolute;
@@ -39,7 +41,14 @@
             padding-right: 1em;
         }
         </style>
-
+    <script>
+    if (localStorage.getItem("firstvisit") == null){
+        localStorage.setItem("firstvisit", true);
+    }
+        if(localStorage.getItem("firstvisit") == true){
+            localStorage.setItem("firstvisit", false);
+        }
+    </script>
 </head>
 <?php
     function get_string_between($string, $start, $end){
@@ -546,3 +555,22 @@ $("#don").hover(function(e) {
 });
 
         </script>
+<script>
+var data = JSON.stringify({
+  "value": 1
+});
+
+var xhr = new XMLHttpRequest();
+xhr.setRequestHeader("X-Cachet-Token", "SWqzKBAirsUT7pifRXNC");
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === this.DONE) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("POST", "http://status.araulin.com/api/v1/metrics/1/points");
+
+xhr.send(data);
+</script>
