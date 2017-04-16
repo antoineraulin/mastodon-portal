@@ -561,7 +561,7 @@ var data = JSON.stringify({
 });
 
 var xhr = new XMLHttpRequest();
-xhr.setRequestHeader("X-Cachet-Token", "SWqzKBAirsUT7pifRXNC");
+
 xhr.withCredentials = true;
 
 xhr.addEventListener("readystatechange", function () {
@@ -571,6 +571,6 @@ xhr.addEventListener("readystatechange", function () {
 });
 
 xhr.open("POST", "http://status.araulin.com/api/v1/metrics/1/points");
-
+xhr.setRequestHeader("X-Cachet-Token", "SWqzKBAirsUT7pifRXNC");
 xhr.send(data);
 </script>
